@@ -1,0 +1,41 @@
+<!-- login Page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login-styles.css">
+    <link rel="stylesheet" href="navbar-styles.css">
+</head>
+<body>
+<!-- Nav Bar -->
+<div id="navbar" class="red-navbar"></div>
+<!-- Nav Bar -->
+<!-- <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="285"></iframe>-->
+<!-- Left Form Column -->
+    <div class="container">
+        <div class="login-form-container">
+            <div class="login-form">
+                <h1 class="login-heading">Login</h1>
+                <div class="form-box">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <p class="link-row">
+                <p><a href="enter.html" class="reset-link">Reset Password</a> | <a href="#" class="create-link">Create Account</a></p> <!-- Links added -->
+                <p><a href="enter.html" class="create-link">Back to Home Page</a></p>
+            </div>
+        </div>
+<!-- Right Column with Matrix Code-->
+        <div class="matrix-login-column">
+            <canvas id="matrixLoginColumn"></canvas>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
