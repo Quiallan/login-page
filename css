@@ -1,0 +1,155 @@
+/*login.html css*/
+
+#navbar// {
+  display: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2015/05/04/08/46/smoke-752039_1280.jpg');
+  background-size: cover;
+}
+
+.login-form-container {
+  width: 50%;
+  padding: 50px;
+  background-color: rgba(0,0,0,0.96);
+  color: red;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-form {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -20px; /* Reduce gap between the LOGIN heading and the form */
+}
+
+.matrix-login-column {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+#matrixLoginColumn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-box {
+  background: linear-gradient(rgba(255, 0, 0, 0.15), rgba(255, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2016/11/09/19/13/fractal-1812490_1280.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 2em;
+  
+}
+
+h1 {
+  font-size: 50px; /* Change login text to 50px */
+  text-align: center;
+  margin-bottom: 10px; /* Added to reduce the gap between the LOGIN heading and the form */
+}
+
+.login-heading {
+  color: red;
+}
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-button-container {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid red;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-radius: 35px;
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  text-indent: 10px; /* Change made here to move the fields placeholder text slightly to the right */
+}
+
+button {
+  background: radial-gradient(circle, rgb(182, 15, 15), red, green, yellow, rgb(188, 26, 26));
+  background-size: 900% 200%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 35px;
+  animation: gradient 35s linear infinite; /* Animation added for rotating gradient */
+  width: 100%; /* Making the button the same width as the form fields */
+  height: 40px; /* Increased height to match form fields */
+}
+
+button:hover {
+  background: radial-gradient(circle, rgb(188, 26, 26), rgb(35, 132, 20), green, red, rgb(182, 15, 15));
+  background-size: 900% 200%; /* Matching the regular button's background-size */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.reset-link, .create-link {
+  color: red;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  display: inline;
+}
+
+.reset-link:hover, .create-link:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .login-form-container, .matrix-login-column {
+      width: 100%;
+  }
+
+  .login-form {
+    width: 80%;
+  }
+
+  .input-button-container {
+    width: 80%;
+  }
+}
+
+.red-navbar .bottom-bar {
+  background-color: red;
+}
+
+.red-navbar .bottom-bar a:hover {
+  color: black;
+}
